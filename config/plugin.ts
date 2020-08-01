@@ -10,6 +10,10 @@ const plugin: EggPlugin = {
     enable: true,
     package: 'egg-mongoose',
   },
+  eggRouterPlus: {
+    enable: true,
+    package: 'egg-router-plus'
+  }
 };
 
 export default plugin;
