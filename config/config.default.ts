@@ -10,10 +10,23 @@ export default (appInfo: EggAppInfo) => {
   // add your egg config in here
   config.middleware = [];
 
+  // mongodb 配置
+  config.mongoose = {
+    url: 'mongodb://insurv:insurv2019@182.92.125.68:27017/insurv_dev2?authSource=insurv_dev2',
+    options: {
+      server: {
+        poolSize: 40,
+      },
+    },
+  };
+
+
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
   };
+
+
 
   // the return config will combines to EggAppConfig
   return {
