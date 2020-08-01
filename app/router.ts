@@ -17,5 +17,14 @@ export default (app: Application) => {
   require('./router/v1/upload')(app);
 
   // 后台路由
+  require('./router/admin/user')(app);
+  require('./router/admin/broker')(app);
+  require('./router/admin/companies')(app);
+  require('./router/admin/product')(app);
+  require('./router/admin/comment')(app);
+  require('./router/admin/question')(app);
+  require('./router/admin/answer')(app);
+  require('./router/admin/homePage')(app);
+
 
 };
