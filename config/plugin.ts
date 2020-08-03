@@ -13,6 +13,14 @@ const plugin: EggPlugin = {
   eggRouterPlus: {
     enable: true,
     package: 'egg-router-plus'
+  },
+  jwt: {
+    enable: true,
+    package: "egg-jwt"
+  },
+  cors: {
+    enable: true,
+    package: 'egg-cors',
   }
 };
 

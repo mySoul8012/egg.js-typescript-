@@ -3,7 +3,7 @@ import { Application } from 'egg';
 // 主路由
 export default (app: Application) => {
   const { controller, router } = app;
-  router.get('/', controller.home.index);
+  router.get('/', controller.home.login);
   // 前台路由
   require('./router/v1/broker')(app);
   require('./router/v1/schedule')(app);
@@ -25,6 +25,4 @@ export default (app: Application) => {
   require('./router/admin/question')(app);
   require('./router/admin/answer')(app);
   require('./router/admin/homePage')(app);
-
-
 };
